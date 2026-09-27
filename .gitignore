@@ -1,0 +1,12 @@
+# Ignorar executáveis e binários compilados
+*.jar
+bin/
+*.class
+
+# Ignorar o JDK/JRE que foi copiado para o projeto
+**/oracleJdk*
+
+# Ignorar configurações da IDE
+.settings/
+.classpath
+.project

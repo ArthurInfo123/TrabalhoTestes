@@ -34,7 +34,7 @@ public class ConsultarClienteTesteTdd {
         assertNull(clienteEncontrado);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void deveLancarExcecaoParaIdInvalido() {
         GerenciadoraClientes gerClientes = new GerenciadoraClientes();
         

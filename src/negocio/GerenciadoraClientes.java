@@ -32,6 +32,10 @@ public class GerenciadoraClientes{
 	 */
 	public Cliente pesquisaCliente (int idCliente) {
 
+		if (idCliente <= 0) {
+       		 throw new IllegalArgumentException();
+    	}
+
 		for (Cliente cliente : clientesDoBanco) {
 			if(cliente.getId() == idCliente)
 				return cliente;

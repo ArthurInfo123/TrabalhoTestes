@@ -113,7 +113,6 @@ public class GerenciadoraContas {
 			return false;
 		}
 
-		// 3. Delegar la validación del saldo y la transferencia a la cuenta de origen
 		return contaOrigem.transfere(contaDestino, valor);
 	}
 	
